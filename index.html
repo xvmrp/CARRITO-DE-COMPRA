@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Compran2</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-house"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-person-circle"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="bi bi-currency-dollar"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="carouselE1" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="img/fondos/572830274_c7c470cc55_b.jpg" class="d-block w-100" alt="">
+            <div class="carousel-caption">
+                <h1>Invierno</h1>
+                <p><a href="#" class="btn btn-dark mt-3">Leer más</a></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/fondos/ad_tnf_1109_grind18.jpg" class="d-block w-100" alt="">
+            <div class="carousel-caption">
+                <h1>Invierno</h1>
+                <p><a href="#" class="btn btn-dark mt-3">Leer más</a></p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/fondos/wp3824832.jpg" class="d-block w-100" alt="">
+            <div class="carousel-caption">
+                <h1>Invierno</h1>
+                <p><a href="#" class="btn btn-dark mt-3">Leer más</a></p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselE1" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselE1" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="wrapper">
+    <header class="header-mobile">
+        <h1 class="logo">Compras</h1>
+        <button class="open-menu" id="open-menu">
+            <i class="bi bi-list"></i>
+        </button>
+    </header>
+    <aside>
+        <button class="close-menu" id="close-menu">
+            <i class="bi bi-x"></i>
+        </button>
+        <header>
+            <h1 class="logo">Compran2</h1>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li>
+                    <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                </li>
+                <li>
+                    <button id="abrigos" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Abrigos</button>
+                </li>
+                <li>
+                    <button id="camisetas" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Camisetas</button>
+                </li>
+                <li>
+                    <button id="pantalones" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Pantalones</button>
+                </li>
+                <li>
+                    <a class="boton-menu boton-carrito" href="./carrito.html">
+                        <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+        <div id="contenedor-productos" class="contenedor-productos">
+        </div>
+        <!-- Formulario de suscripción a descuentos -->
+        <section id="suscripcion-descuentos" class="suscripcion-descuentos mt-5">
+            <h2>Suscríbete para recibir descuentos</h2>
+            <form id="formulario-descuentos">
+                <div class="mb-3">
+                    <label for="inputEmail" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Ingresa tu correo" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Suscribirse</button>
+            </form>
+        </section>
+    </main>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/menu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
